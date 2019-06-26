@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <!--<link rel="stylesheet" type="text/css" href="/site_media/css/style.css?{% now 'U' %}" />-->
+        <link rel="stylesheet" href="{% static 'css/messaging_system.css' %}?{% now 'U' %}">
+        <title>Messages</title>
+    </head>
+<body>
+
+<div id="messaging_system-logout">
+    <h2><a href="{% url 'logout' %}">logout</a></h2>
+</div>
+<div id="user-details">
+    <p>user email: {{ request.user.email }} </p>
+    <p> Number of messages: {{ messages|length }}</p>
+</div>
+
+<div class="content">
+
+	{% block content %}
+	{% endblock %}
+</div>
+
+</body>
+</html>

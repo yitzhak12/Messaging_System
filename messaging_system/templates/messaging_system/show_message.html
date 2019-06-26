@@ -1,0 +1,17 @@
+{% extends 'messaging_system/base.html' %}
+
+{% block content %}
+    <div>
+        <h2><a href="{% url 'home_page' %}">go to home page</a></h2>
+    </div>
+	<div id="message-details">
+        <h1><u>Message details:</u></h1>
+        <ul>
+            <li>Sender: {{ message.sender }} </li>
+            <li> Receiver: {{ message.receiver }} </li>
+            <li> Creation date: {{ message.creation_date }} </li>
+            <li> Subject: {{ message.subject }} </li>
+            <li> Content: {{ message.content }} </li>
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'messaging_system/base.html' %}
+
+{% block content %}
+    <div>
+        <h2><a href="{% url 'home_page' %}">go to home page</a></h2>
+    </div>
+    <h2>New Message:</h2>
+    {% if error %}
+    <div id="">
+        <h2 style="color: red;">{{ error }}</h2>
+    </div>
+    {% endif %}
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}

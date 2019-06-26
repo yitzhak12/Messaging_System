@@ -1,0 +1,7 @@
+*.pyc
+*~
+__pycache__
+messaging_system_venv
+db.sqlite3
+/static
+.DS_Store

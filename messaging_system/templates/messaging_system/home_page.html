@@ -1,0 +1,34 @@
+{% extends 'messaging_system/base.html' %}
+
+{% block content %}
+<div>
+    <h1>User messages:</h1>
+</div>
+{% if messages %}
+<div id="home-page-user-messages">
+    <ol>
+        {% for message in messages %}
+        <li><a href="{% url 'show_message' pk=message.pk %}">{{ message.subject }}</a></li>
+        {% endfor %}
+    </ol>
+</div>
+{% else %}
+<div>
+    <h2> You don't have any messages </h2>
+</div>
+{% endif %}
+
+<div id="Messaging-System-Menu"> <h1> Menu: </h1>
+    {% if messages %}
+    <div>
+        <h2><a href="{% url 'show_messages' %}">Show All Messages</a></h2>
+    </div>
+    <div>
+        <h2><a href="{% url 'show_unread_messages' %}">Show Unread Messages</a></h2>
+    </div>
+    {% endif %}
+    <div>
+        <h1><a href="{% url 'write_message' %}">Write a new message</a></h1>
+    </div>
+</div>
+{% endblock %}
