@@ -7,5 +7,6 @@ urlpatterns = [
     path('messages', views.get_messages, name='show_messages'),
     path('unread_messages/', views.get_unread_messages, name='show_unread_messages'),
     path('read_message/<int:pk>/', views.read_message, name='show_message'),
-    path('write_message/', views.create_new_message, name='write_message')
+    path('write_message/', views.create_new_message, name='write_message'),
+    path('delete_message/<int:pk>/', views.delete_message, name='delete_message'),
 ]

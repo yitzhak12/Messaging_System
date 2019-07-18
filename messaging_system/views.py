@@ -51,7 +51,9 @@ def get_messages(request):
 
 @login_required
 def get_unread_messages(request):
-    pass
+    messages = request.user.message_set.filter(read_message=False)
+    return render(request, 'messaging_system/show_messages.html',
+                  {'messages': messages, 'show_unread_messages': True})
 
 
 @login_required
@@ -69,12 +71,18 @@ def create_new_message(request):
         message_form = MessageForm(request.POST)
         if message_form.is_valid():
             message = message_form.save(commit=False)
+            print(message_form.cleaned_data)
             if User.objects.filter(email=message.receiver).exists():
                 receiver_user = User.objects.get(email=message.receiver)
                 message.sender = user.email
+                message.user = user
                 message.save()
-                message.users.add(user)
-                message.users.add(receiver_user)
+                if message.receiver != message.sender:
+                    # Create a new message object related to the receiver user
+                    message.pk = None
+                    message.user = receiver_user
+                    message.save()
+
                 return redirect('show_messages')
             else:
                 error = "User '{}' is not exist".format(message.receiver)

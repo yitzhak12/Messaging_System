@@ -14,4 +14,8 @@
             <li> Content: {{ message.content }} </li>
         </ul>
     </div>
+
+    <div>
+        <h2><a href="{% url 'delete_message' pk=message.pk %}">Delete message</a></h2>
+    </div>
 {% endblock %}

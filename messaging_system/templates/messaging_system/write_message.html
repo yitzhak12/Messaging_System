@@ -12,6 +12,21 @@
     {% endif %}
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
+        <!--<p class="form-errors">{{ form.receiver.errors.as_text }}</p>-->
+            <!--<div id="receiver_textbox">-->
+                <!--{{ form.receiver.label_tag }}-->
+                <!--{{ form.receiver }}-->
+            <!--</div>-->
+        <!--<p class="form-errors">{{ form.content.errors.as_text }}</p>-->
+            <!--<div id="content_textbox">-->
+                <!--{{ form.content.label_tag }}-->
+                <!--{{ form.content }}-->
+            <!--</div>-->
+        <!--<p class="form-errors">{{ form.subject.errors.as_text }}</p>-->
+            <!--<div id="subject_textbox">-->
+                <!--{{ form.subject.label_tag }}-->
+                <!--{{ form.subject }}-->
+            <!--</div>-->
         <button type="submit" class="save btn btn-default">Save</button>
     </form>
 {% endblock %}

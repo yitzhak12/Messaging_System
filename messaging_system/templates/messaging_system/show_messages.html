@@ -5,7 +5,11 @@
             <h2><a href="{% url 'home_page' %}">go to home page</a></h2>
         </div>
         <div>
-            <h1><u>User messages:</u></h1>
+            {% if show_unread_messages %}
+            <h1><u>Unread messages:</u></h1>
+            {% else %}
+            <h1><u>All messages:</u></h1>
+            {% endif %}
         </div>
 
         <section id="user-messages">

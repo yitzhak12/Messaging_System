@@ -11,3 +11,7 @@ table, th, td{
     font-size: 20px;
     color: purple;
 }
+
+#message-details ul li {
+    font-size: 28px;
+}

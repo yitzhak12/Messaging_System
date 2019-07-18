@@ -25,6 +25,10 @@ class UserForm(forms.ModelForm):
 
 
 class MessageForm(forms.ModelForm):
+    USER_EMAIL_CHOICES = ((u.email, u.email) for u in User.objects.all())
+
+    receiver = forms.ChoiceField(choices=USER_EMAIL_CHOICES, widget=forms.Select)
+
     class Meta:
         model = Message
         fields = ('receiver', 'content', 'subject')
