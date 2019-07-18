@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d88a08f-3be5-47fd-ba75-75d7f43b0c93" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/messaging_system/migrations/0003_auto_20190626_1733.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/messaging_system/migrations/0004_auto_20190702_1312.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/messaging_system/migrations/0005_auto_20190702_1343.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/messaging_system/migrations/0006_auto_20190702_1724.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/messaging_system/forms.py" afterPath="$PROJECT_DIR$/messaging_system/forms.py" />
@@ -37,16 +41,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
               <caret line="7" column="32" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show_message.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/messaging_system/templates/messaging_system/show_message.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -124,8 +118,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0005_auto_20190702_1343.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="0005_auto_20190702_1343.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0005_auto_20190702_1343.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0002_auto_20190618_1632.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0002_auto_20190618_1632.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -542,13 +546,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/messaging_system/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messaging_system/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
@@ -913,6 +910,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0003_auto_20190626_1733.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/messaging_system/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
@@ -921,7 +926,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0003_auto_20190626_1733.py">
+    <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0006_auto_20190702_1724.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -937,15 +942,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0006_auto_20190702_1724.py">
+    <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0005_auto_20190702_1343.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="145">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0005_auto_20190702_1343.py">
+    <entry file="file://$PROJECT_DIR$/messaging_system/migrations/0002_auto_20190618_1632.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
